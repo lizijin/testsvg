@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--checkbox -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👇CheckBox单张图片使用android:button"></TextView>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@null"
+            android:button="@drawable/app_brand_btn_checklist_sel" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👇CheckBox单张图片使用app:buttonCompat"></TextView>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@null"
+            app:buttonCompat="@drawable/app_brand_btn_checklist_sel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👇CheckBox selector图片使用xml"></TextView>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@null"
+            android:button="@drawable/framework_selector_cart_delivery_check" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👇 CheckBox selector图片使用代码"></TextView>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/code_checkbox"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@null" />
+        <!--checkbox -->
+
+        <!--ImageView -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👇 ImageView 单张图片android:src"></TextView>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/app_brand_btn_checklist_sel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👇 ImageView 单张图片app:srcCompat"></TextView>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/app_brand_btn_checklist_sel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👇 ImageView selector图片使用xml"></TextView>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:onClick="checkImageView"
+            android:src="@drawable/framework_selector_cart_delivery_select" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👇ImageView selector图片"></TextView>
+
+        <ImageView
+            android:id="@+id/code_image_view"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:onClick="checkImageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👇selector图片使用xml"></TextView>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+
+            android:src="@drawable/framework_selector_cart_delivery_check" />
+        <!--ImageView -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👇TextView 单张图片android:drawableLeft"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/app_brand_btn_checklist_sel"
+            android:text="tttttttttt"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👇TextView selector 图片xml"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tttttttttt"
+            android:onClick="checkImageView"
+            app:drawableLeftCompat="@drawable/framework_selector_cart_delivery_select"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👇TextView selector 代码"></TextView>
+
+        <TextView
+            android:id="@+id/code_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkImageView"
+            android:text="tttttttttt"></TextView>
+
+    </LinearLayout>
+</ScrollView>

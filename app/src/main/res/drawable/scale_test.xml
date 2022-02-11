@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:tint="#ff0000"
+    android:drawable="@drawable/ic_android_black_24dp" android:level="1">
+
+</scale>
